@@ -14,9 +14,9 @@
 
       <br />
       <br />
-      <button ng-click="dateRangeCtrl.selectToday()">Select today</button>
+      <button type="button" class="btn bb-btn-secondary" ng-click="dateRangeCtrl.selectToday()">Select today</button>
       <br />
-      <button ng-click="dateRangeCtrl.reset()">Reset</button>
+      <button type="button" class="btn bb-btn-secondary" ng-click="dateRangeCtrl.reset()">Reset</button>
       <br />
       <label>
           <input type="checkbox" ng-model="dateRangeCtrl.options.pastOnly" /> Past items filter
@@ -46,6 +46,21 @@
       To date: <strong>{{specificRangeCtrl.toDate | date: 'MM/dd/yyyy'}}</strong>
       <br />
       Date range: <strong><span ng-hide="specificRangeCtrl.isValid">not</span> valid</strong>
+
+      <br />
+
+  </div>
+  <div ng-controller="CustomDateRangePickerDemoController as customRangeCtrl" class="form-group">
+      <bb-date-range-picker bb-date-range-picker-value="customRangeCtrl.dateRangePickerValue"
+                              bb-date-range-picker-options="customRangeCtrl.dateRangePickerOptions"
+                              bb-date-range-picker-label="'Custom date-range picker'"
+                              ></bb-date-range-picker>
+
+      Selected dateRangeType: <strong>'{{customRangeCtrl.dateRangePickerValue.dateRangeType}}'</strong>
+      <br />
+      Caption: <strong>'{{customRangeCtrl.bbDateRangePicker.getDateRangeTypeCaption(specificRangeCtrl.dateRangePickerValue)}}'</strong>
+      <br />
+      Description: <strong>'{{customRangeCtrl.bbDateRangePicker.getDateRangeFilterDescription(specificRangeCtrl.dateRangePickerValue)}}'</strong>
 
       <br />
 
