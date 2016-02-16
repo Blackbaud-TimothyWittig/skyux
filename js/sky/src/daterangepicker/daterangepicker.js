@@ -173,7 +173,7 @@
         ];
 
         function getDateRangeTypeCaption(dateRangePickerValue) {
-            if (angular.isNumber(dateRangePickerValue)) {
+            if (angular.isNumber(dateRangePickerValue) || angular.isString(dateRangePickerValue)) {
                 // If the input is the enum value itself, then map it to the object structure we expect before proceeding.
                 dateRangePickerValue = { dateRangeType: dateRangePickerValue };
             } else {
