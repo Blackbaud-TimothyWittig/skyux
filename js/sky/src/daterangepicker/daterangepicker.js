@@ -154,7 +154,7 @@
             bbDateRangeTypes.NEXT_FISCAL_YEAR
         ];
 
-        specificDateRangeOptions = defaultDateRangeOptions.push(bbDateRangeTypes.SPECIFIC_RANGE);
+        specificDateRangeOptions = defaultDateRangeOptions.concat([bbDateRangeTypes.SPECIFIC_RANGE]);
 
         pastDateRangeOptions = [
             bbDateRangeTypes.AT_ANY_TIME,
@@ -213,7 +213,7 @@
             dateRangeTypes: bbDateRangeTypes,
             defaultDateRangeOptions: defaultDateRangeOptions,
             pastDateRangeOptions: pastDateRangeOptions,
-            specifcDateRangeOptions: specificDateRangeOptions,
+            specificDateRangeOptions: specificDateRangeOptions,
             getDateRangeTypeCaption: getDateRangeTypeCaption,
             getDateRangeFilterDescription: getDateRangeFilterDescription
         };
