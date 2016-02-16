@@ -5,7 +5,7 @@ summary: The date-range picker creates a box with a dropdown to select date rang
 ---
 
 The date-range picker directive creates a text box where users can select date ranges from a set of well-known options. You can also allow users to select dates to create specific date ranges. The directive works hand-in-hand with a date-range picker service to provide service-oriented functionality.
- 
+
 ### Date-range Picker Settings ###
     - `bb-date-range-picker` &mdash; Creates a text box with a dropdown to select date ranges.
         - `bb-date-range-picker-value` &mdash; Specifies an object that tracks the value of the date-range picker control. The `.dateRangeType` property provides the integer (ENUM) value of the date-range type that users select.
@@ -23,7 +23,7 @@ The date-range picker service provides functionality that works closely with the
 
     - `dateRangeTypes` &mdash; An ENUM of all date-range types that the date-range picker understands and can include in the dropdown.
     - `defaultDateRangeOptions` &mdash; An array of `dateRangeTypes` that provides the default order and the set of date-range types to include in the dropdown.
-    - `specifcDateRangeOptions` &mdash; An array of `dateRangeTypes` that provides the same options as `defaultDateRangeOptions`, plus a date-range type that let users select dates for a specific date range.
+    - `specificDateRangeOptions` &mdash; An array of `dateRangeTypes` that provides the same options as `defaultDateRangeOptions`, plus a date-range type that let users select dates for a specific date range.
     - `pastDateRangeOptions` &mdash; An array of `dateRangeTypes` that are appropriate to filter for things that occurred in the past. For example, you don't want to search for items created "next month."
     - `getDateRangeTypeCaption` &mdash; A function to get the caption of the dropdown item for a given `bb-date-range-picker-value`.
     - `getDateRangeFilterDescription` &mdash; A function to get the description of a given `bb-date-range-picker-value`.
