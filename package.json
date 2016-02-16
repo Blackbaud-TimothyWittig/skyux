@@ -54,7 +54,7 @@
     "path": "0.12.7",
     "wdio-jasmine-framework": "^0.1.6",
     "webdrivercss": "v2.0.0beta-rc1",
-    "webdriverio": "4.0.3"
+    "webdriverio": "3.4.0"
   },
   "scripts": {
     "test": "grunt test"
